@@ -9,32 +9,11 @@
    <link href="gps.css" rel="stylesheet" type="text/css" />
    <script type = "text/javascript" src = "form.js"></script>
    
-   <script type = "text/javascript">
-      function showCountdown() 
-	  {
-	  // the today variable contains the current date and time
-	     var today = new Date();
-		 
-      // display the current date and time
-         document.mallclock.timeNow.value = showTime(today);
-		 
-      
-      }
-   </script>
+ 
 
 </head>
 
-<body onload="setInterval('showCountdown()',1000)">
-<form name="mallclock" id="mallclock" action="">
-
-   <div id="clock">
-      <h4>Time</h4>
-      <p>
-         
-         <input size="12" id="timeNow" name="timeNow" />
-      </p>
-   </div>
-</form>
+<body>
 <form id="orders" method="post" action="done.htm">
 
    <div id="links">
