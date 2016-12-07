@@ -8,24 +8,31 @@
    <title>GPS-ware Order Form</title>
    <link href="gps.css" rel="stylesheet" type="text/css" />
    <script type = "text/javascript" src = "form.js"></script>
-   
- 
-
+    
 </head>
 
 <body>
+
 <form id="orders" method="post" action="done.htm">
 
-   <div id="links">
-      
-   </div>
-
+   
    <div id="main">
       <p id="logo"><img src="gpsware.jpg" alt="GPS-ware" /></p>
       <h1>Order Form</h1>
       <p id="datep">
-         <input class="text" id="date" name="date" size="11" value="mm-dd-yyyy" 
+	     <input class="text" id="date" name="date" size="11" value="mm-dd-yyyy" 
           tabindex="-1" readonly="readonly" />
+		 <input size="12" id="timeNow" name="timeNow" tabindex="-1" readonly="readonly" />
+      </p>
+	  <p id="perinfo">
+	     <div> 
+		  Name <input class="text" id="nam" name="name" size="15" />
+		  Family <input size="20" id="fam" name="fam" />
+          <input type="button" id="concat" value=" Concat " /><br/>
+		  Name + Family <input size="30" id="namfam" name="namfam" /><br/>
+		  Event Name <input size="20" id="event" name="event" />
+
+		 </div>
       </p>
 
    <fieldset>
