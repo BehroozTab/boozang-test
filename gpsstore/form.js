@@ -40,6 +40,8 @@
 
 window.onload = initForm;
 
+var displayevent;
+
 function showTime(time) 
 {
     var time = new Date();
@@ -78,13 +80,7 @@ function initForm() {
    setInterval('showTime()',1000);
    document.forms[0].qty1.focus();
    
-   document.forms[0].concat.onclick = fconcat;
-   document.onblur = fblur;
-   document.onclick = fclick;
-   document.ondblclick = fondblclick;
-   document.onmousedown = fonmousedown;
-   
-   
+  
    document.forms[0].onsubmit = validateForm;
    document.forms[0].onreset = resetForm;
 	
@@ -98,39 +94,6 @@ function initForm() {
    document.forms[0].shipping.onchange = calcShipping; 
 }
 
-function fconcat() {
-	
-	var n = document.forms[0].nam.value;
-	var f = document.forms[0].fam.value;
-	
-	document.forms[0].namfam.value = n + ' ' + f;
-	
-}
-
-function fblur() {
-	
-	document.forms[0].event.value = ' onblur ';
-
-}
-
-function fclick() {
-	
-	document.forms[0].event.value = ' onclick ';
-
-}
-
-function fondblclick() {
-	
-	document.forms[0].event.value = ' ondblclick ';
-
-}
-
-
-function fonmousedown() {
-	
-	document.forms[0].event.value = ' onmousedown ';
-
-}
 
 function calcCost() {
    
